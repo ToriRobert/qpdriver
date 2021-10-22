@@ -1,5 +1,5 @@
 {
-        "xapp_name": "qpdriver",
+        "name": "qpdriver",
         "version": "0.0.1",
         "containers": [
             {
@@ -37,5 +37,11 @@
             "txMessages": ["QPD_TX_TEST"],
             "rxMessages": ["A1_POLICY_REQ", "QP_TX_TEST"],
             "policies": [20000]
-        }
-    }
+        },
+	"controls": {
+        "fileStrorage": false
+    	},
+    	"db" : {
+        "waitForSdl": false
+    	}
+}
