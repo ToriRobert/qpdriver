@@ -1,0 +1,70 @@
+---
+project: 'ric_app_qp_driver'
+project_creation_date: '2020-03-10'
+project_category: ''
+lifecycle_state: 'Incubation'
+project_lead: &oran_ric_app_qp_driver_ptl
+    name: 'Matti Hiltunen'
+    email: 'hiltunen@research.att.com'
+    id: 'MattiHiltunen'
+    company: 'AT&T Labs-Research'
+    timezone: 'America/New_York'
+primary_contact: *oran_ric_app_qp_driver_ptl
+issue_tracking:
+    type: 'jira'
+    url: 'https://jira.o-ran-sc.org/projects/'
+    key: 'ric_app_qp_driver'
+mailing_list:
+    type: 'groups.io'
+    url: 'https://lists.o-ran-sc.org/g/main'
+    tag: '[]'
+realtime_discussion:
+    type: 'irc'
+    server: 'freenode.net'
+    channel: '#oran'
+meetings:
+    - type: 'gotomeeting+irc'
+      agenda: 'https://wiki.o-ran-sc.org/display/'
+      url: ''
+      server: 'freenode.net'
+      channel: '#oran'
+      repeats: ''
+      time: ''
+repositories:
+    - ric-app/qp-driver
+committers:
+    - <<: *oran_ric_app_qp_driver_ptl
+    - name: 'Jack Lucas'
+      email: 'jflucas@research.att.com'
+      company: 'ATT'
+      id: 'jackl'
+      timezone: 'America/New_York'
+    - name: 'Chandrasekaran Ramachandran'
+      email: 'chandrasekaran-r@hcl.com'
+      company: 'HCL'
+      id: 'Chandru'
+      timezone: 'India/India Standard Time(IST)'
+    - name: 'Deepanshu Karnwal'
+      email: 'deepanshu.k@hcl.com'
+      company: 'HCL'
+      id: 'deepanshuk'
+      timezone: 'India/India Standard Time(IST)'
+    - name: 'Scott Daniels'
+      email: 'daniels@research.att.com'
+      company: 'ATT'
+      id: 'escottdaniels'
+    - name: 'Guy Jacobson'
+      email: 'gj2418@att.com'
+      company: 'ATT'
+      id: 'guyjacobson'
+      timezone: 'America/New_York'
+tsc:
+    # yamllint disable rule:line-length
+    approval: 'https://wiki.o-ran-sc.org/display/TOC#ORANSCTechnicalOversightCommittee(TOC)-20200304'
+    changes:
+        - type: 'Removal'
+          name: 'Tommy Carpenter'
+          link: 'https://lists.o-ran-sc.org/g/main/topic/committer_changes_in_ricapp/75199311?p=,,,20,0,0,0::recentpostdate%2Fsticky,,,20,0,0,75199311'
+        - type: 'Promotion'
+          name: 'Chris Lott'
+          link: 'https://lists.o-ran-sc.org/g/main/topic/committer_changes_in_ricapp/75199311?p=,,,20,0,0,0::recentpostdate%2Fsticky,,,20,0,0,75199311'

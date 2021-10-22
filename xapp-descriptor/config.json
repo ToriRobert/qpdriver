@@ -1,0 +1,41 @@
+{
+        "xapp_name": "qpdriver",
+        "version": "0.0.1",
+        "containers": [
+            {
+                "name": "qpdriver",
+                "image": {
+                    "registry": "docker.io",
+                    "name": "torizhang/test-qp-driver",
+                    "tag": "0.0.1"
+                }
+            }
+        ],
+        "messaging": {
+            "ports": [
+                {
+                    "name": "rmr-data",
+                    "container": "qpdriver",
+                    "port": 4560,
+                    "rxMessages": ["A1_POLICY_REQ", "QP_TX_TEST"],
+                    "txMessages": ["QPD_TX_TEST"],
+                    "policies": [20000],
+                    "description": "rmr receive data port for qpdriver"
+                },
+                {
+                    "name": "rmr-route",
+                    "container": "qpdriver",
+                    "port": 4561,
+                    "description": "rmr route port for qpdriver"
+                }
+            ]
+        },
+        "rmr": {
+            "protPort": "tcp:4560",
+            "maxSize": 2072,
+            "numWorkers": 1,
+            "txMessages": ["QPD_TX_TEST"],
+            "rxMessages": ["A1_POLICY_REQ", "QP_TX_TEST"],
+            "policies": [20000]
+        }
+    }
